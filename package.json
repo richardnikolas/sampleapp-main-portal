@@ -1,0 +1,14 @@
+{
+  "name": "microfrontends-playground",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "start": "lerna run start --parallel"
+  }
+}

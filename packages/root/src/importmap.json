@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@sampleApp/root-config": "//localhost:4200/sampleApp-root-config.js",
+    "@sampleApp/main-portal-app": "//localhost:8500/sampleApp-main-portal-app.js"
+  }
+}
