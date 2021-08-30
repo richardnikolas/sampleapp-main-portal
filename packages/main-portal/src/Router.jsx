@@ -35,6 +35,13 @@ const Router = () => (
       path="/react-parcel*"
     />
 
+    {/* <RouteWrapper
+      exact
+      layout={Main}
+      component={VueParcel}
+      path="/vue-parcel*"
+    /> */}
+
     <Redirect to="/error/404" />
   </Switch>
 );

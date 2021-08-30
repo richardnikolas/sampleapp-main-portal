@@ -4,7 +4,7 @@ import { createTheme } from '@material-ui/core/styles';
 
 const DEFAULT_THEME = Object.freeze({
   id: 'default',
-  primary: '#2D2244',
+  primary: '#023b56',
   secondary: '#7873AB'
 });
 
@@ -31,7 +31,8 @@ export const createAppTheme = (color = DEFAULT_THEME) => {
         main: '#AAAAAA'
       },
       background: {
-        main: '#D8CEF0'
+        main: '#D8CEF0',
+        darkBlue: '#011e2c'
       }
     }
   };
