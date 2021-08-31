@@ -2,6 +2,7 @@
   "imports": {
     "@sampleApp/root-config": "//localhost:4200/sampleApp-root-config.js",
     "@sampleApp/main-portal-app": "//localhost:8500/sampleApp-main-portal-app.js",
-    "@sampleApp/react-parcel-app": "//localhost:8800/sampleApp-react-parcel-app.js"
+    "@sampleApp/react-parcel-app": "//localhost:8800/sampleApp-react-parcel-app.js",
+    "@sampleApp/vue-parcel-app": "//localhost:8900/js/app.js"
   }
 }

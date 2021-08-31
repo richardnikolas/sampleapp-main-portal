@@ -24,10 +24,10 @@ const Home = () => {
   const classes = useStyles();
 
   return (
-    <Grid container justify="center" className={classes.container}>
+    <Grid container justifyContent="center" className={classes.container}>
       <Grid item className={classes.titleWrapper}>
         <h1 className={classes.title}>
-          A simple sample of the power of <br />Micro Frontends!
+          A small sample of the power of <br />Micro Frontends!
         </h1>
       </Grid>
     </Grid>

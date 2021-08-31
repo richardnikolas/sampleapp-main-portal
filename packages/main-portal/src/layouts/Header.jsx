@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { makeStyles, Grid, ListItem, ListItemText } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
@@ -11,13 +11,15 @@ const useStyles = makeStyles(() => ({
   title: {
     fontSize: '30px',
     margin: '0 30px',
-    color: '#FFFFFF'
+    color: '#FFFFFF',
+    cursor: 'pointer'
   },
   listItem: {
     display: 'flex',
     alignItems: 'center',
     textAlign: 'center',
     color: '#FFFFFF',
+    padding: '0 30px',
     borderLeft: '1px solid',
     borderRight: '1px solid',
     borderColor: '#FFFFFF',
@@ -29,16 +31,17 @@ const useStyles = makeStyles(() => ({
 
 const Header = () => {
   const classes = useStyles();
+  const { push } = useHistory();
 
   return (
     <Grid container className={classes.header}>
-      <Grid item xs={2} style={{ display: 'flex', alignItems: 'center' }}>
-        <h1 className={classes.title}>
-          Micro Frontends
+      <Grid item style={{ display: 'flex', alignItems: 'center' }}>
+        <h1 className={classes.title} onClick={() => push('/')}>
+          Main Portal
         </h1>
       </Grid>
 
-      <Grid item xs={1} style={{ display: 'flex' }}>
+      <Grid item style={{ display: 'flex', marginLeft: 30 }}>
         <ListItem
           button
           to="/react-parcel"
@@ -52,7 +55,7 @@ const Header = () => {
         </ListItem>
       </Grid>
 
-      <Grid item xs={1} style={{ display: 'flex' }}>
+      <Grid item style={{ display: 'flex' }}>
         <ListItem
           button
           to="/vue-parcel"

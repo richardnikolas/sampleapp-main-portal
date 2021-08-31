@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Main from './layouts/Main';
 import Home from './pages/Home';
 import ReactParcel from './pages/ReactParcel/ReactParcel';
+import VueParcel from './pages/VueParcel/VueParcel';
 
 const RouteWrapper = (props) => {
   const {
@@ -35,12 +36,12 @@ const Router = () => (
       path="/react-parcel*"
     />
 
-    {/* <RouteWrapper
+    <RouteWrapper
       exact
       layout={Main}
       component={VueParcel}
       path="/vue-parcel*"
-    /> */}
+    />
 
     <Redirect to="/error/404" />
   </Switch>
